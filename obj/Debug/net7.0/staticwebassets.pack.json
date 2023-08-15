@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/saneeshvs/coldBanana/BananaMailer/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/saneeshvs/coldBanana/BananaMailer/wwwroot/css/.DS_Store",
+      "PackagePath": "staticwebassets/css/.DS_Store"
+    },
+    {
+      "Id": "/Users/saneeshvs/coldBanana/BananaMailer/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/Users/saneeshvs/coldBanana/BananaMailer/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/saneeshvs/coldBanana/BananaMailer/wwwroot/image/.DS_Store",
+      "PackagePath": "staticwebassets/image/.DS_Store"
+    },
+    {
+      "Id": "/Users/saneeshvs/coldBanana/BananaMailer/wwwroot/image/coldLogo.jpeg",
+      "PackagePath": "staticwebassets/image/coldLogo.jpeg"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.BananaMailer.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.BananaMailer.props",
+      "PackagePath": "build\\BananaMailer.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.BananaMailer.props",
+      "PackagePath": "buildMultiTargeting\\BananaMailer.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.BananaMailer.props",
+      "PackagePath": "buildTransitive\\BananaMailer.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
