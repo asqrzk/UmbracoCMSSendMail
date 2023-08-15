@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+body{
+  margin: 0 auto;
+  font-family: lato, sans-serif;
+  padding-bottom: 50px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 0 40px;
+  grid-template-areas: ". content content content content .";
+  outline: none;
+}
+
+.grid-video-offers{
+  margin-top: 50px;
+  align-items: center;
+  grid-template-areas: "video video video benefits benefits benefits"
+}
+
+.grid-benefit-detail{
+  margin-top: 4rem;
+}
+
+.grid-video-offers video{
+  grid-area: video;
+  width: 100%;
+  max-width: 900px;
+
+}
+
+.content{
+  grid-area: content;
+  max-width: 1000px;
+  width: 100%;   /* always fill the content that its given */
+}
+
+.dark-header{
+  background-color: #00111a;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.light-header{
+  color: white;
+  background-color: #00AAFF;
+  padding-top: 500px;
+  margin-top: -500px;
+}
+
+.brand-row{
+  display: flex;   /* puts logo and brand name on the same line */
+  justify-content: center; 
+  align-items: center;
+}
+
+.logo{
+  width: 50px;
+  margin-right: 10px;
+}
+
+.title{
+  font-size: 48px;
+  text-align: center;
+}
+
+.sub-title{
+  font-size: 28px;
+  text-align: center;
+  font-weight: bolder;
+  
+}
+
+.dark-header-divider{
+  margin-top: -5px;
+  height: 150px;
+  /* background-image: url("dark-background.svg"); */
+  background-size: cover;
+  background-position: bottom left;
+  position: relative;
+  z-index: 1;
+}
+
+.light-header-divider{
+  margin-top: -5px;
+  /* background-image: url("light-background.svg"); */
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.email-form{
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.email-form input{
+  background: white;
+  color: #005681;
+  padding: .5em 1em;
+  border: 2px solid black;
+  border-radius: .5em;
+  font-size: 20px;
+  margin-right: 1em;
+  outline: none;
+  flex-grow: 1;
+    
+}
+
+.email-form input:focus{
+  background-color: #dcf3ff;
+}
+
+.email-form button{
+  color: white;
+  background-color: #111;
+  border: 2px solid white;
+  border-radius: .5em;
+  padding: .5em 1em;
+  max-width: 250px;  /* doesnt exceed this width no matter the screen size */
+  cursor: pointer;
+}
+
+.email-form button:hover, .email-form button:focus{
+  background-color: #333;
+  
+}
+
+.offers-section{
+  grid-area: benefits;
+  margin-left: 3rem;
+  justify-self: flex-start;
+}
+.offers{
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.offers img{
+  height: 6.5rem;
+  margin-right: 2rem;
+}
+
+.benefit-detail{
+  grid-column: span 2;
+  margin: 2rem;
+}
+
+.benefit-detail-title{
+  text-align: center;
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.benefit-detail-text{
+  font-size: 1.5rem;
+  color: #444;
+  font-weight: lighter;
+}
+
+@media (max-width: 1200px){
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "content";
+  }
+
+  .grid-video-offers{
+    grid-template-columns: 1fr;
+    grid-template-areas: "video" "benefits";
+  }
+
+  .grid-video video{
+    justify-self: center;
+  }
+
+  .grid-benefit-detail{
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .offers-section{
+    margin-top: 2rem;
+    margin-left: 0;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 1000px){
+  .grid-benefit-detail{
+    grid-template-columns: 1fr;
+
+  }
+}
+
+@media (max-width: 800px){
+  .email-form {
+    flex-direction: column;
+
+  }
+  .email-form button{
+    max-width: initial;
+    width: 100%;
+  }
+
+  .email-form input{
+    margin-right: 0;
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+
+  .offers{
+    font-size: 2rem;
+  }
+  .offers img{
+    height: 2rem;
+    margin-right: 1rem;
+  }
+}
+ @media (max-width: 500px){
+   .brand-name{
+     display: none;
+   }
+   .logo{
+     margin-top: 1rem;
+     font-size: 1.25rem;
+   }
+
+   .offers {
+     font-size: 1.25rem;
+   }
+
+   .offers img{
+     height: 1.25rem;
+     margin-right: .5rem;
+   }
+
+   .benefit-detail-title{
+     font-size: 1.25rem;
+   }
+
+   .benefit-detail-text{
+    font-size: 1.15rem;
+  }
+
+  .benefit-detail{
+    margin: 1rem;
+  }
+
+  .grid-benefit-detail{
+    margin-top: 1rem;
+  }
+
+
+
+ }
